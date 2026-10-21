@@ -1,0 +1,90 @@
+.registro {
+  text-align: center;
+  background: white;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+  width: 350px;
+  margin: 100px auto;
+}
+
+.progreso {
+  display: flex;
+  flex-direction: column;
+  align-items: flex -start;
+  position: relative;
+}
+.paso {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.linea::before {
+  content: '';
+  position: absolute;
+  left: 10px;
+  top: 50px;
+  bottom: 50px;
+  width: 4px;
+  background-color: #e5d4c0;
+  z-index: 0;
+}
+.circulo {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background-color: #e5d4c0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  margin-right: 20px;
+  z-index: 1;
+}
+.circulo.completado {
+  background-color: #b98c57;
+}
+.circulo.actual {
+  border: 2px solid #6f263b;
+}
+.contenedor -paso {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  gap: 15px;
+  cursor: pointer;
+  margin-bottom: 30px;
+}
+.icono img {
+  width: 50px;
+  height: 50px;
+}
+.texto {
+  color: #6f263b;
+}
+h1 {
+  color: #6f263b;
+}
+
+.registrar {
+  background-color: #b98c57;
+  color: white;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+.selector -idioma {
+  margin-top: 20px;
+}
+
+.selector -idioma button {
+  background: #65c4be;
+  color: white;
+  padding: 5px 10px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  margin: 0 5px;
+}

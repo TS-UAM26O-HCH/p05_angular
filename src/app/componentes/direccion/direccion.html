@@ -1,0 +1,32 @@
+<div class="formulario">
+  <div class="btn-regresar">
+    <button type="button" (click)="regresar()">
+      <img src="/iconos/retroceder.svg" alt="Icono de regresar" />
+    </button>
+  </div>
+
+  <h1>{{ 'ADDRESS ' | translate }}</h1>
+
+  <form [formGroup]="formulario" (ngSubmit)="enviarFormulario()">
+    @for (campo of campos; track campo.name) {
+      <div class="form">
+        <label [for]="campo.name">{{ campo.label | translate }}:</label>
+        <input
+          [id]="campo.name"
+          [formControlName]="campo.name"
+          [type]="campo.type"
+          [required]="campo.required"
+        />
+        @if (formulario.get(campo.name)?.invalid && formulario.get(campo.name)?.touched) {
+          <div class="mensaje -error">{{ 'REQUIERED ' | translate }}</div>
+        }
+      </div>
+    }
+
+    <div class="boton -enviar">
+      <button type="submit" [disabled]="!formulario.valid">
+        {{ 'SUBMIT ' | translate }}
+      </button>
+    </div>
+  </form>
+</div>

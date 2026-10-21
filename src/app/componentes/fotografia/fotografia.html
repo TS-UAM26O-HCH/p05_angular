@@ -1,0 +1,28 @@
+<div class="formulario">
+  <div class="btn-regresar">
+    <button type="button" (click)="regresar()">
+      <img src="/iconos/retroceder.svg" alt="Icono de regresar" />
+    </button>
+  </div>
+
+  <h1>{{ 'PICTURE ' | translate }}</h1>
+
+  <div class="fotografia">
+    <img src="/iconos/account-avatar-profile-user-6-svgrepo-com.svg" alt="Icono de usuario" />
+  </div>
+
+  <div class="form">
+    <p>Tomar o subir una fotografía con las siguientes características:</p>
+    <ul>
+      <li>Fondo blanco</li>
+      <li>Frente u orejas descubiertas</li>
+      <li>Sin lentes ni gorra</li>
+      <li>Sin filtros</li>
+      <li>No debe ser una selfie</li>
+    </ul>
+  </div>
+
+  <button type="button" (click)="continuar()">
+    {{ 'CONTINUE ' | translate }}
+  </button>
+</div>
