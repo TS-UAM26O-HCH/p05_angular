@@ -1,5 +1,5 @@
 <div class="registro">
-  <h1>{{ 'REGISTER ' | translate }}</h1>
+  <h1>{{ 'REGISTER' | translate }}</h1>
 
   <div class="tarjeta">
     <div class="progreso linea">
@@ -14,7 +14,7 @@
               <span>&#10003;</span>
             }
           </div>
-          <div class="contenedor -paso" (click)="paso.accion()">
+          <div class="contenedor-paso" (click)="paso.accion()">
             <p class="texto">{{ paso.texto | translate }}</p>
             <div class="icono">
               <img [src]="paso.icono" [alt]="paso.alt" />
@@ -26,7 +26,7 @@
     <button class="registrar">{{ 'REG' | translate }}</button>
   </div>
 
-  <div class="selector -idioma">
+  <div class="selector-idioma">
     <button (click)="cambiarIdioma('es')">Español</button>
     <button (click)="cambiarIdioma('en')">English</button>
   </div>

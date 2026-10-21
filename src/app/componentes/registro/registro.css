@@ -79,12 +79,12 @@ h1 {
   margin-top: 20px;
 }
 
-.selector -idioma button {
+.selector-idioma button {
   background: #65c4be;
   color: white;
   padding: 5px 10px;
   border: none;
   cursor: pointer;
   border-radius: 5px;
-  margin: 0 5px;
+  margin: 10px 5px;
 }

@@ -5,7 +5,7 @@
     </button>
   </div>
 
-  <h1>{{ 'ADDRESS ' | translate }}</h1>
+  <h1>{{ 'ADDRESS' | translate }}</h1>
 
   <form [formGroup]="formulario" (ngSubmit)="enviarFormulario()">
     @for (campo of campos; track campo.name) {
@@ -18,14 +18,14 @@
           [required]="campo.required"
         />
         @if (formulario.get(campo.name)?.invalid && formulario.get(campo.name)?.touched) {
-          <div class="mensaje -error">{{ 'REQUIERED ' | translate }}</div>
+          <div class="mensaje-error">{{ 'REQUIERED' | translate }}</div>
         }
       </div>
     }
 
-    <div class="boton -enviar">
+    <div class="boton-enviar">
       <button type="submit" [disabled]="!formulario.valid">
-        {{ 'SUBMIT ' | translate }}
+        {{ 'SUBMIT' | translate }}
       </button>
     </div>
   </form>
